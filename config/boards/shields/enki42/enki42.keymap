@@ -57,10 +57,10 @@
 //| LALT/\ |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RALT/- |
 //                             | RSE | SPC | LWR |   | LWR | BKSP | RSE |
                         bindings = <
-  &kp GRAVE &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I &kp O &kp P &kp BSPC
-   &mo 1 &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K &kp L &kp SQT &kp RET
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                  &mo 2 &kp SPACE &kp LWIN   &kp F5 &kp SPACE &kp RALT
+  &kp GRAVE  &kp Q  &kp W  &kp E  &kp R      &kp T       &kp Y   &kp U      &kp I      &kp O    &kp P     &kp BSPC
+&mo 1      &kp A  &kp S  &kp D  &kp F      &kp G       &kp H   &kp J      &kp K      &kp L    &kp SQT   &kp RET
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V      &kp B       &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &mo 2  &kp SPACE  &kp LWIN    &kp F5  &kp SPACE  &kp RALT
                         >;
                 };
                 lower_layer {
@@ -70,10 +70,10 @@
 //|  LALT/=  |  0  |  1 |  4  |  3  |  .  |    |  ls |  F4 |  F5 |  F6 |  F7 | RALT/F3 |
 //                      | ADJ | ___ | ___ |    | ___ | ___ | ADJ |
                         bindings = <
- &kp ESC &kp TAB &kp UP &kp N3 &kp N4 &kp N5   &kp LC(F10) &kp N7 &kp N8 &kp N9 &kp PSCRN &kp DEL
-   &bt BT_CLR &kp LEFT &kp DOWN &kp RIGHT &kp F &trans   &kp LC(S) &kp N4 &kp N5 &kp N6 &kp SEMI &trans
-   &kp LCTRL &trans &trans &kp LC(C) &kp LC(V) &trans   &kp LC(Q) &kp N1  &kp N2 &kp N3    &trans &trans
-                                    &bt BT_SEL 0     &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4   &kp N0
+&kp ESC     &kp TAB   &kp UP    &kp N3        &kp N4        &kp N5          &kp LC(F10)     &kp N7        &kp N8  &kp N9  &kp PSCRN  &kp DEL
+&bt BT_CLR  &kp LEFT  &kp DOWN  &kp RIGHT     &kp F         &trans          &kp LC(S)       &kp N4        &kp N5  &kp N6  &kp SEMI   &trans
+&kp LCTRL   &trans    &trans    &kp LC(C)     &kp LC(V)     &trans          &kp LC(Q)       &kp N1        &kp N2  &kp N3  &trans     &trans
+                                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_CLR_ALL  &bt BT_SEL 4  &kp N0
                         >;
                 };
                 raise_layer {
@@ -83,10 +83,10 @@
 //| LALT |  MUTE  |  PGDN  |  ___ | END  | ___  |            | ___  | END  | ___ | PGDN | MUTE | RALT |
 //                          | ___ | ___  | ADJ  |            | ADJ  | ___  | ___ |
                         bindings = <
-&kp LWIN   &kp C_VOL_UP   &kp PG_UP  &kp C_PP       &kp HOME &kp C_PAUSE                                 &kp N0    &kp HOME  &kp C_PP    &kp PG_UP  &kp C_VOL_UP  &kp RWIN
-&kp LCTRL  &kp C_VOL_DN   &kp LEFT   &kp UP         &kp DOWN &kp RIGHT                                   &kp LEFT  &kp DOWN  &kp UP      &kp RIGHT  &kp C_VOL_DN  &kp RALT 
-&kp LALT   &kp C_MUTE     &kp PG_DN  &kp LG(LS(S))  &kp END  &kp C_PLAY                                  &kp N0    &kp END   &grtsgn      &kp PG_DN  &kp C_MUTE    &kp RALT
-                                                    &trans   &trans       &lt ADJ RET        &lt ADJ ESC &trans &trans
+&kp LA(TAB)  &kp LC(Q)        &kp LC(W)   &kp LC(E)   &kp LC(R)   &kp STAR       &kp HASH   &kp N7    &kp LPAR              &kp RPAR               &kp N0     &kp PSCRN
+&kp LCTRL    &kp LG(N1)       &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)     &kp MINUS  &kp N4    &kp N5                &kp N6                 &kp BSLH   &trans
+&kp LSHFT    &kp EXCLAMATION  &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT    &kp CARET  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EQUAL
+                                          &kp LGUI    &trans      &soft_off      &kp RET    &trans    &kp RALT
                         >; 
                 };
                                 adjust_layer {
